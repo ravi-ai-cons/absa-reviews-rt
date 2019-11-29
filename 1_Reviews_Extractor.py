@@ -3,14 +3,14 @@ import hashlib
 from bs4 import BeautifulSoup, Tag
 import logging
 import requests
-from mongoDBconnection import  update_mongo_collection, initialize_mongo
-from config import mongo_config, argument_config
+from 0_Mongo_Connector import  update_mongo_collection, initialize_mongo
+from 0_config import mongo_config, argument_config
 import tweepy
 import json
 import time
 from dateutil.parser import parse
 import re
-from ABSA_v2 import load_sentiments_to_mongo
+from 2_ABSA_v2 import load_sentiments_to_mongo
 
 class SentimentAnalysis(object):
     def __init__(self, apiKey):
