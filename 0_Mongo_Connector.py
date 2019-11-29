@@ -4,8 +4,8 @@
 from uuid import uuid1
 from pymongo import MongoClient
 import logging
-import config
-from config import mongo_config
+import 0_config
+from 0_config import mongo_config
 
 
 def make_mongo_connection(collection_name):
