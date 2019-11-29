@@ -26,7 +26,7 @@ import logging
 import matplotlib.pyplot as plt
 import absa_data_utils as data_utils
 import warnings
-from mongoDBconnection import update_mongo_collection, initialize_mongo
+from 0_Mongo_Connector import update_mongo_collection, initialize_mongo
 from config import mongo_config
 
 spacy = spacy.load('en_core_web_sm')
