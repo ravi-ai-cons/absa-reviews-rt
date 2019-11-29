@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 27 10:44:32 2019
-
-@author: RT
-"""
 
 #!pip install neuralcoref
 #!pip install scikit-multilearn
