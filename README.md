@@ -6,8 +6,8 @@
 To extract Sentiment scores for the Aspects from the user restaurant and hotel reviews.
 
 ### Approach
-+ Fetch reviews from Google Places, Zomato, Twitter, CitySearch (Scrape), TripAdvisor (testing)
-+ Clean the reviews and store in Mongo.
+1. Fetch reviews from Google Places, Zomato, Twitter, CitySearch (Scrape), TripAdvisor (testing)
+2. Clean the reviews and store in Mongo.
 + Prepare Aspects (for each review using tools/manually) in JSON/XML for training.
 
 + Use Google's pretrained BERT (Bidirectional Encoder Representations from Transformers).
