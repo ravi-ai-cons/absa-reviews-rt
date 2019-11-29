@@ -2,6 +2,30 @@
 # Aspect Based Sentiment Analysis for user reviews
 
 
+### Goal
+To extract Sentiment scores for the Aspects from the user restaurant and hotel reviews.
+
+### Approach
++ Fetch reviews from Google Places, Zomato, Twitter, CitySearch (Scrape), TripAdvisor (testing)
++ Clean the reviews and store in Mongo.
++ Prepare Aspects (for each review using tools/manually) in JSON/XML for training.
+
++ Use Google's pretrained BERT (Bidirectional Encoder Representations from Transformers).
++ Train and Retrain BERT with our reviews.
++ Get polarity scores for Test reviews.
+
++ Calculate Accuracy through ROC and FP (F1 score vs PPR) graphs. 
++ Optimize the Model and Retrain.
++ Test it through Flask UI app.
+
++ Save the Model to Pickle.
++ Dockerize the application.
++ Deploy it in AWS server.
+
+----
+
+#### File Config
+
 * Dockerfile			- 	ADD requirements.txt /app/requirements.txt
 					ADD . /app
 					RUN chmod 777 entrypoint.sh
@@ -24,4 +48,6 @@
 * ABSA_Retraining.py		- Builds and retrains the ML model upon BERT with the extracted reviews.
 
 * ABSA_v2.py			- Preprocess and builds the ML model with the help of pretrained BERTget polarities for restaurant reviews
+
+----
 
