@@ -2,15 +2,14 @@
 Aspect Based Sentiment Analysis for user reviews
 
 
-
-Dockerfile			- 	ADD requirements.txt /app/requirements.txt
+* Dockerfile			- 	ADD requirements.txt /app/requirements.txt
 					ADD . /app
 					RUN chmod 777 entrypoint.sh
 					RUN chmod 777 app.py
 					RUN chmod 777 Reviews-Extractor.py
 					CMD ./entrypoint.sh
 
-entrypoint.sh			- Docker points to this file to begin the execution of the application
+* entrypoint.sh			- Docker points to this file to begin the execution of the application
 					python Reviews-Extractor.py &
 					python app.py
 
