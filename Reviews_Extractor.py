@@ -10,7 +10,7 @@ import json
 import time
 from dateutil.parser import parse
 import re
-from ABSA_v1 import load_sentiments_to_mongo
+from ABSA_v2 import load_sentiments_to_mongo
 
 class SentimentAnalysis(object):
     def __init__(self, apiKey):
