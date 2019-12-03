@@ -1,42 +1,42 @@
 ## Architecture of the ABSA
 
-### * 1. Fetch the raw reviews
+### 1. Fetch the raw reviews
 
 
-### * 2. Clean up the reviews
+### 2. Clean up the reviews
 
 
-### * 3. Stemming & Lemmatization
+### 3. Stemming & Lemmatization
 
 
-### * 4. Sentence Tokenization
+### 4. Sentence Tokenization
 
 
-### * 5. TF-IDF Vectorization
+### 5. TF-IDF Vectorization
 
 
-### * 6. Prepare train & test sets with Aspect labels
+### 6. Prepare train & test sets with Aspect labels
 
 
-### * 7. Make a model with BERT
+### 7. Make a model with BERT
 
 
-### * 8. Retrain the model with our training data
+### 8. Retrain the model with our training data
 
 
-### * 9. Extract Aspects for test data
+### 9. Extract Aspects for test data
 
 
-### * 10. Build a model to get Polarity scores
+### 10. Build a model to get Polarity scores
 
 
-### * 11. Measure the accuracy of polarities given by model 
+### 11. Measure the accuracy of polarities given by model 
 
 
-### * 12. Optimize the models 
+### 12. Optimize the models 
 
 
-### * 13. Convert the polarities to ratings
+### 13. Convert the polarities to ratings
 
 
-### 14. Vizualize the aspect scores.
+### 14. Vizualize the aspect scores graph
