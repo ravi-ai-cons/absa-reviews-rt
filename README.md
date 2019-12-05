@@ -9,19 +9,25 @@ To extract Sentiment scores for the Aspects from the user restaurant and hotel r
 ##### Data Preparation:
 1. Fetch reviews from Google Places, Zomato, Twitter, CitySearch (Scrape), TripAdvisor (testing)
 2. Clean the reviews and store in Mongo.
-3. Prepare Aspects (for each review using tools/manually) in JSON/XML for training.
+3. Stemmeing & Lemmatization
+4. Sentence Tokenization
+5. TF-IDF vectorization
 ##### Model Preparation:
-4. Use Google's pretrained BERT (Bidirectional Encoder Representations from Transformers).
-5. Train and Retrain BERT with our reviews.
-6. Get polarity scores for Test reviews.
+6. Prepare Aspects (for each review using tools/manually) in JSON/XML for training.
+7. Use Google's pretrained BERT (Bidirectional Encoder Representations from Transformers).
+8. Train and Retrain BERT model with our reviews.
+9. Extract Aspects for test data reviews.
+10. Test model for polarity scores of Test reviews.
 ##### Optimization:
-7. Calculate Accuracy through ROC and FP (F1 score vs PPR) graphs. 
-8. Optimize the Model and Retrain.
-9. Test it through Flask UI app.
+11. Calculate Accuracy through ROC and FP (F1 score vs PPR) graphs. 
+12. Optimize the Model and Retrain.
+13. Convert the polarities to ratings.
+14. Visualize the aspect scores in graphs
+15. Test it through Flask UI app.
 ##### Deployment:
-10. Save the Model to Pickle.
-11. Dockerize the application.
-12. Deploy it in AWS server.
+16. Save the Model to Pickle.
+17. Dockerize the application.
+18. Deploy it to AWS server.
 
 ----
 
